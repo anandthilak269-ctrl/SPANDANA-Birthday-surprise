@@ -1,0 +1,7 @@
+# Placeholder media folder
+
+Add your audio and video files here:
+- our-song.mp3 (background music loop, MP3 format, ~1-3MB)
+- birthday-video.mp4 (birthday video, MP4 format, H.264 codec, ~5-20MB)
+
+These files are optional. The website will gracefully show placeholders if they're missing.

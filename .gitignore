@@ -1,0 +1,21 @@
+# .gitignore - GitHub will ignore these files
+
+# Media files (if they're large)
+# media/birthday-video.mp4
+# media/our-song.mp3
+
+# Operating system files
+.DS_Store
+Thumbs.db
+.folder
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if using any build tools in future)
+node_modules/
+package-lock.json
