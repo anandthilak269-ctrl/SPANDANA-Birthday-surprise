@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="A romantic birthday surprise website made with love for Spandana ❤️">
+  <meta name="theme-color" content="#d91b67">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Spandana My Love ❤️">
+  <meta property="og:description" content="A special birthday surprise created with love">
+  <meta property="og:type" content="website">
+  
+  <title>Spandana My Love ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Hearts -->
+  <div class="bg-hearts" id="bgHearts"></div>
+  <div class="petals" id="petals"></div>
+
+  <!-- Section 1: Welcome -->
+  <section class="screen" id="welcome">
+    <div class="welcome-container">
+      <div class="welcome-text">
+        <p class="welcome-subtitle">For My Love ❤️</p>
+        <h1 class="welcome-title">Happy Birthday</h1>
+        <p class="welcome-description">Spandana</p>
+        <p class="welcome-message">I made a little world just for you...</p>
+      </div>
+      <button class="welcome-button" onclick="openSurprise()">
+        <span class="heart-icon">❤️</span>
+        <span class="button-text">Open Your Surprise</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Section 2: Hero Birthday -->
+  <section class="screen" id="hero">
+    <div class="hero-container">
+      <div class="floating-hearts" id="heroHearts"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">HAPPY BIRTHDAY</h1>
+        <p class="hero-emoji">💗</p>
+        <h2 class="hero-name">SPANDANA</h2>
+        <p class="hero-subtitle">MY LOVE</p>
+      </div>
+      <button class="hero-button" onclick="scrollToSection('story')">
+        Our Story ❤️
+      </button>
+    </div>
+  </section>
+
+  <!-- Section 3: Photo Gallery -->
+  <section class="screen" id="story">
+    <div class="container">
+      <h2 class="section-title">The Most Beautiful Part of My Life</h2>
+      
+      <div class="gallery">
+        <div class="gallery-featured">
+          <img src="images/spandana1.jpg" alt="Spandana" class="gallery-image" loading="lazy" onerror="handleImageError(this)">
+          <div class="gallery-placeholder">
+            <div class="placeholder-heart">💗</div>
+            <p>Our first memory</p>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/spandana2.jpg" alt="Spandana" class="gallery-image" loading="lazy" onerror="handleImageError(this)">
+            <div class="gallery-placeholder">
+              <div class="placeholder-heart">💕</div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/spandana3.jpg" alt="Spandana" class="gallery-image" loading="lazy" onerror="handleImageError(this)">
+            <div class="gallery-placeholder">
+              <div class="placeholder-heart">💝</div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/spandana4.jpg" alt="Spandana" class="gallery-image" loading="lazy" onerror="handleImageError(this)">
+            <div class="gallery-placeholder">
+              <div class="placeholder-heart">💖</div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/spandana5.jpg" alt="Spandana" class="gallery-image" loading="lazy" onerror="handleImageError(this)">
+            <div class="gallery-placeholder">
+              <div class="placeholder-heart">✨</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Love Letter -->
+  <section class="screen" id="letter">
+    <div class="container">
+      <h2 class="section-title">A Little Something From My Heart...</h2>
+      
+      <div class="letter-card">
+        <div class="letter-content">
+          <p class="letter-text">
+            Spandana,
+          </p>
+          <p class="letter-text">
+            You are not just a part of my life.
+            <br>
+            You are one of the most beautiful reasons behind it.
+          </p>
+          <p class="letter-text">
+            Every smile of yours, every little moment with you, and every memory we create means more to me than I can explain.
+          </p>
+          <p class="letter-text">
+            On your birthday, I just want you to know one thing…
+          </p>
+          <p class="letter-text">
+            <strong>I will always be grateful that I get to call you mine.</strong>
+          </p>
+          <p class="letter-text">
+            Happy Birthday, My Love. ❤️
+          </p>
+          <div class="letter-signature">
+            With Love,<br>
+            <span class="signature-name">Anand ❤️</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: 7 Gifts -->
+  <section class="screen" id="gifts">
+    <div class="container">
+      <h2 class="section-title">7 Things That Matter in Life ❤️</h2>
+      
+      <div class="gifts-grid">
+        <div class="gift-card" style="--delay: 0s">
+          <div class="gift-number">01</div>
+          <div class="gift-icon">⌚</div>
+          <h3 class="gift-name">TIME</h3>
+          <p class="gift-meaning">Because every moment with you is precious.</p>
+        </div>
+
+        <div class="gift-card" style="--delay: 0.1s">
+          <div class="gift-number">02</div>
+          <div class="gift-icon">💪</div>
+          <h3 class="gift-name">HEALTH</h3>
+          <p class="gift-meaning">Because I want to see you healthy, strong and happy.</p>
+        </div>
+
+        <div class="gift-card" style="--delay: 0.2s">
+          <div class="gift-number">03</div>
+          <div class="gift-icon">👜</div>
+          <h3 class="gift-name">CARE</h3>
+          <p class="gift-meaning">Because taking care of you will always matter to me.</p>
+        </div>
+
+        <div class="gift-card" style="--delay: 0.3s">
+          <div class="gift-number">04</div>
+          <div class="gift-icon">🌸</div>
+          <h3 class="gift-name">BEAUTY</h3>
+          <p class="gift-meaning">Because you deserve to feel beautiful every day.</p>
+        </div>
+
+        <div class="gift-card" style="--delay: 0.4s">
+          <div class="gift-number">05</div>
+          <div class="gift-icon">📸</div>
+          <h3 class="gift-name">MEMORIES</h3>
+          <p class="gift-meaning">Because our memories are my favourite collection.</p>
+        </div>
+
+        <div class="gift-card" style="--delay: 0.5s">
+          <div class="gift-number">06</div>
+          <div class="gift-icon">✨</div>
+          <h3 class="gift-name">DREAMS</h3>
+          <p class="gift-meaning">I want to see you achieve everything you dream about.</p>
+        </div>
+
+        <div class="gift-card" style="--delay: 0.6s">
+          <div class="gift-number">07</div>
+          <div class="gift-icon">❤️</div>
+          <h3 class="gift-name">LOVE</h3>
+          <p class="gift-meaning">The most important gift is the love we share.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Birthday Cake -->
+  <section class="screen" id="cake">
+    <div class="container">
+      <h2 class="section-title">Today Is Your Day ❤️</h2>
+      <p class="cake-subtitle">Make a Wish, My Love ✨</p>
+      
+      <div class="cake-container">
+        <div class="cake" onclick="blowCandles()">
+          <div class="cake-body"></div>
+          <div class="cake-layer"></div>
+          
+          <div class="candles">
+            <div class="candle">
+              <div class="flame"></div>
+            </div>
+            <div class="candle">
+              <div class="flame"></div>
+            </div>
+            <div class="candle">
+              <div class="flame"></div>
+            </div>
+          </div>
+        </div>
+        <p class="cake-text">Click the cake to make a wish ✨</p>
+      </div>
+
+      <div class="wish-message" id="wishMessage"></div>
+    </div>
+  </section>
+
+  <!-- Section 7: Memories Timeline -->
+  <section class="screen" id="memories">
+    <div class="container">
+      <h2 class="section-title">Little Moments, Big Memories</h2>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>The Beginning ❤️</h3>
+            <p>Where our story started.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>The Laughs 😂</h3>
+            <p>All those moments that made us laugh.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>The Adventures 🌍</h3>
+            <p>Every place feels better with you.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>The Simple Days ☕</h3>
+            <p>Even ordinary days became special.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Forever ♾️</h3>
+            <p>And this story is still being written…</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: Video Surprise -->
+  <section class="screen" id="video-section">
+    <div class="container">
+      <h2 class="section-title">I Have One More Surprise For You...</h2>
+      
+      <div class="video-container">
+        <video 
+          id="birthdayVideo"
+          class="video-player"
+          controls
+          playsinline
+          preload="metadata"
+          onended="showVideoMessage()">
+          <source src="media/birthday-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <div class="video-placeholder" id="videoPlaceholder">
+          <div class="placeholder-heart">🎬</div>
+          <p>A Special Memory Is Coming ❤️</p>
+        </div>
+
+        <p class="video-text">Press Play ❤️</p>
+      </div>
+
+      <div class="video-message" id="videoMessage"></div>
+    </div>
+  </section>
+
+  <!-- Section 9: Final Surprise -->
+  <section class="screen" id="final">
+    <div class="final-container">
+      <div class="final-sparkles" id="finalSparkles"></div>
+      
+      <div class="final-content">
+        <p class="final-step-1">And Finally…</p>
+        <p class="final-step-2">If I had to choose you again…</p>
+        <div class="final-step-3">
+          <p>I would choose you.</p>
+          <p>Again.</p>
+          <p>And again.</p>
+          <p>And again. ❤️</p>
+        </div>
+        <p class="final-step-4">Happy Birthday, My Love.</p>
+        <h1 class="final-name">SPANDANA ❤️</h1>
+        <p class="final-forever">FOREVER & ALWAYS</p>
+        <p class="final-signature">With Love,<br><span class="signature-name">Anand ❤️</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Music Control -->
+  <button class="music-button" id="musicButton" aria-label="Toggle music" title="Our Song ❤️">
+    <span class="music-icon">🎵</span>
+    <span class="music-indicator"></span>
+  </button>
+
+  <audio id="bgMusic" preload="auto" loop>
+    <source src="media/our-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
